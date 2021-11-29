@@ -31,3 +31,10 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Spring Boot ###
+/src/main/resources/config/application.properties
+/src/test/resources/config/application-test.properties
+
+### Other ###
+flyway.app.properties
