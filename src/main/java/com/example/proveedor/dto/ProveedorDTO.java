@@ -1,8 +1,9 @@
 package com.example.proveedor.dto;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class ProveedorDTO {
+public class ProveedorDTO  implements Serializable {
 
     private Long id;
     private String nombre;
@@ -70,5 +71,17 @@ public class ProveedorDTO {
     @Override
     public int hashCode() {
         return Objects.hash(getId(), getNombre(), getDireccion(), getCiudad(), getProvincia(), getTelefono());
+    }
+
+    @Override
+    public String toString() {
+        return "ProveedorDTO{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", direccion='" + direccion + '\'' +
+                ", ciudad='" + ciudad + '\'' +
+                ", provincia='" + provincia + '\'' +
+                ", telefono='" + telefono + '\'' +
+                '}';
     }
 }
