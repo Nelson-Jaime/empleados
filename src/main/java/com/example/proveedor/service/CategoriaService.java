@@ -73,7 +73,6 @@ public class CategoriaService {
         if (categoria != null){
             categoriaRepository.delete(categoria);
         }
-
     }
 
     //
@@ -85,7 +84,6 @@ public class CategoriaService {
     public CategoriaDto entidad_a_dto(Categoria categoria){
 
         CategoriaDto dto = new CategoriaDto();
-
         dto.setId(categoria.getId());
         dto.setNombre(categoria.getNombre());
 
@@ -96,7 +94,6 @@ public class CategoriaService {
     public Categoria dto_a_entidad(CategoriaDto dto){
 
         Categoria categoria = new Categoria();
-
         categoria.setId(dto.getId());
         categoria.setNombre(dto.getNombre());
 
